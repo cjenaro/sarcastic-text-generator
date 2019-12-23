@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Sarcastic text generator</title>
+</head>
+<body>
+  <style>
+    body {
+      min-height: 100vh;
+      display: grid;
+      align-items: center;
+      justify-content: center;
+      margin: 0;
+      background-color: #222222;
+    }
+
+    .typer {
+      margin: 0 auto;
+      background: #ffffff;
+      width: 100vw;
+      max-width: 500px;
+      padding: 2rem;
+      border-radius: 4px;
+      display: grid;
+    }
+
+    .inputs {
+      display: flex;
+      flex-direction: column;
+    }
+
+    label {
+      margin: 5px 0;
+    }
+
+    textarea {
+      padding: 1rem;
+    }
+  </style>
+
+  <div class="typer">
+    <div class="inputs">
+      <label for="sarcastic">
+        Sarcastic
+        <input name="transform" id="sarcastic" type="radio" checked>
+      </label>
+      <label for="funky">
+        Funky
+        <input name="transform" id="funky" type="radio">
+      </label>
+      <label for="unable">
+        Unable to structure a sentence
+        <input name="transform" id="unable" type="radio">
+      </label>
+      <label for="yoda">
+        Yoda
+        <input name="transform" id="yoda" type="radio">
+      </label>
+    </div>
+    <textarea name="text-to-transform" id="text-to-transform" cols="15" rows="5"></textarea>
+    <p id="transformed-text"></p>
+  </div>
+
+  <script src="./index.js"></script>
+</body>
+</html>
